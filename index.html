@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BelAI | Ваш бизнес на автопилоте</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'space-indigo': {
+                50: '#f0f0f5',
+                100: '#e0e1eb',
+                200: '#c1c3d7',
+                300: '#a2a5c3',
+                400: '#8487ae',
+                500: '#65699a',
+                600: '#51547b',
+                700: '#3c3f5d',
+                800: '#282a3e',
+                900: '#14151f',
+                950: '#0e0f16'
+              },
+              'lavender-grey': {
+                50: '#f0f2f4',
+                100: '#e1e4ea',
+                200: '#c3cad5',
+                300: '#a5afc0',
+                400: '#8894aa',
+                500: '#6a7a95',
+                600: '#556177',
+                700: '#3f495a',
+                800: '#2a313c',
+                900: '#15181e',
+                950: '#0f1115'
+              },
+              'platinum': {
+                50: '#eff4f5',
+                100: '#dfe8ec',
+                200: '#c0d1d8',
+                300: '#a0bac5',
+                400: '#81a4b1',
+                500: '#618d9e',
+                600: '#4e717e',
+                700: '#3a545f',
+                800: '#27383f',
+                900: '#131c20',
+                950: '#0e1416'
+              },
+              'punch-red': {
+                50: '#fde7ea',
+                100: '#fbd0d5',
+                200: '#f8a0aa',
+                300: '#f47180',
+                400: '#f14156',
+                500: '#ed122b',
+                600: '#be0e23',
+                700: '#8e0b1a',
+                800: '#5f0711',
+                900: '#2f0409',
+                950: '#210206'
+              },
+              'classic-crimson': {
+                50: '#ffe5eb',
+                100: '#ffccd8',
+                200: '#ff99b1',
+                300: '#ff668a',
+                400: '#ff3363',
+                500: '#ff003b',
+                600: '#cc0030',
+                700: '#990024',
+                800: '#660018',
+                900: '#33000c',
+                950: '#240008'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #0e0f16; /* space-indigo-950 */
+        color: #f0f0f5; /* space-indigo-50 */
+      }
+      section {
+        scroll-margin-top: 100px;
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #f47180, #ff3363); /* punch-red-300 to classic-crimson-400 */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-card {
+        background: rgba(20, 21, 31, 0.6); /* space-indigo-900 with opacity */
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      ::selection {
+        background-color: rgba(237, 18, 43, 0.3);
+        color: #fff;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
