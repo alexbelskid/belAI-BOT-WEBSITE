@@ -12,9 +12,11 @@ export const Calculator: React.FC = () => {
   useEffect(() => {
     const hourlyRate = salary / 168;
     const monthlyLoss = managers * hourlyRate * hours * 21;
-    setSavingsMonth(Math.round(monthlyLoss));
-    const avgProjectCost = 3000;
-    const payback = avgProjectCost / monthlyLoss;
+    const botCost = 250; // Стоимость бота $250/мес
+    const netSavings = monthlyLoss - botCost; // Чистая экономия после вычета стоимости бота
+    setSavingsMonth(Math.round(netSavings));
+    const setupCost = 500; // Стоимость внедрения (можно настроить)
+    const payback = setupCost / netSavings;
     setRoiMonths(payback < 0.1 ? 0.1 : parseFloat(payback.toFixed(1)));
   }, [managers, hours, salary]);
 

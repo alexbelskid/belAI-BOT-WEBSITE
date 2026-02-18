@@ -82,7 +82,7 @@ export const Pricing: React.FC = () => {
 
             <div className="mb-6 md:mb-8">
               <div className="flex items-end gap-2">
-                <span className="text-3xl md:text-4xl font-bold text-white">$200</span>
+                <span className="text-3xl md:text-4xl font-bold text-white">$250</span>
                 <span className="text-punch-red-300 mb-1 font-medium">/ месяц</span>
               </div>
               <p className="text-[10px] md:text-xs text-lavender-grey-500 mt-2 leading-tight">
