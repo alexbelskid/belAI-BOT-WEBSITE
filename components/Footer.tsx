@@ -34,6 +34,16 @@ export const Footer: React.FC = () => {
                 </li>
               </ul>
           </div>
+
+          <div className="flex justify-center md:justify-start">
+            <div className="glass-card p-4 rounded-xl hover:scale-105 transition-transform">
+              <img 
+                src="/qr-code.png" 
+                alt="QR Code - Contact" 
+                className="w-32 h-32 md:w-40 md:h-40"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-lavender-grey-600 text-xs tracking-wide">
